@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pysrt
 
 def subrip_time_to_seconds(subrip_time):
@@ -31,5 +32,5 @@ def merge_short_subtitles(srt_file, min_duration=4):
     subs.save(srt_file.replace('.srt', '_merged.srt'), encoding='utf-8')
 
 # 調用函數
-srt_file = 'working_file.srt'  # 換成你的檔案名
+srt_file = '/Users/elmer_lee/Documents/elmer-github-file/podcast_bilingual/AEE 2194 Play it Cool With These English Idioms - All Ears English Podcast.srt'  # 換成你的檔案名。合併完成的新字幕檔會儲存在原字幕檔相同路徑中
 merge_short_subtitles(srt_file)
